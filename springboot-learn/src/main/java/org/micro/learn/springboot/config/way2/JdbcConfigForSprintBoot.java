@@ -8,8 +8,11 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 
+/*
+TODO: uncomment it for use way2 configuration
 @Configuration
 @EnableConfigurationProperties(JdbcProperties.class)
+ */
 public class JdbcConfigForSprintBoot {
 
     @Bean

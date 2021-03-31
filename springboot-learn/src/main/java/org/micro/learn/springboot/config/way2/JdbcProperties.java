@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * It will use the default config file: application.properties
  */
-@ConfigurationProperties(prefix="jdbc")
+//@ConfigurationProperties(prefix="jdbc")//TODO: let way2 take affect, need uncomment it.
 @Data//lombox, Generates getters for all fields
 public class JdbcProperties {
     /**
