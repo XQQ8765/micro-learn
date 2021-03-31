@@ -1,4 +1,4 @@
-package org.micro.learn.sprintboot;
+package org.micro.learn.springboot;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +15,6 @@ public class HelloController {
     @RequestMapping("/")
     @ResponseBody
     public String getHello() {
-        return "hello";
+        return "hello, dataSource:" + dataSource;
     }
 }

@@ -1,16 +1,15 @@
-package org.micro.learn.sprintboot.config;
+package org.micro.learn.springboot.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 
 import javax.sql.DataSource;
 
-@Configuration
-@PropertySource("classpath:/jdbc.properties")
-public class JdbcConfig {
+//@Configuration
+//@PropertySource("classpath:/jdbc.properties")
+public class JdbcConfigForSprintBoot {
     /**
      * Java配置方式
      */
@@ -23,7 +22,7 @@ public class JdbcConfig {
     @Value("${jdbc.driverClassName}")
     String driverClassName;
 
-    @Bean
+    //@Bean
     public DataSource dataSource() {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setDriverClassName(driverClassName);
