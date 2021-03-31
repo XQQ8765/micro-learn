@@ -1,4 +1,4 @@
-package org.micro.learn.springboot.config;
+package org.micro.learn.springboot.config.way2;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -6,8 +6,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * It will use the default config file: application.properties
  */
-//@ConfigurationProperties
-//@Data//lombox, Generates getters for all fields
+@ConfigurationProperties(prefix="jdbc")
+@Data//lombox, Generates getters for all fields
 public class JdbcProperties {
     /**
      * SpringBoot属性注入方式

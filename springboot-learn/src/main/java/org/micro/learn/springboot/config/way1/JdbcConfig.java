@@ -23,7 +23,7 @@ public class JdbcConfig {
     @Value("${jdbc.driverClassName}")
     String driverClassName;
 
-    @Bean
+    //@Bean //TODO: way1 need to recover it
     public DataSource dataSource() {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setDriverClassName(driverClassName);
